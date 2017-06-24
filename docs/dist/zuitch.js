@@ -402,6 +402,16 @@
       return element;
     };
 
+    const checkLocalStorage = () => {
+      try {
+        window.localStorage.setItem('zuitch_test', true);
+        window.localStorage.removeItem('zuitch_test');
+        return true;
+      } catch (e) {
+        return false;
+      }
+    };
+
     const setOption = option => {
       window.localStorage.setItem('isUni', option);
     };
@@ -453,7 +463,8 @@
 
     domready(() => {
       let option = window.localStorage.getItem('isUni');
-      if (option) {
+      let isLocalStorage = checkLocalStorage();
+      if (isLocalStorage && option) {
         convertor(option === 'true');
         showOptions();
       } else {
