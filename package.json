@@ -1,0 +1,27 @@
+{
+  "name": "zuitch",
+  "version": "0.0.1",
+  "description": "Zawgyi Unicode Switch",
+  "main": "zuitch.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify zuitch.js -o docs/dist/zuitch.js"
+  },
+  "keywords": [
+    "unicode",
+    "zawgyi",
+    "switch"
+  ],
+  "author": "Aung Myo Kyaw",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^14.4.0"
+  },
+  "dependencies": {
+    "domready": "^1.0.8",
+    "knayi-myscript": "^2.0.5"
+  }
+}
