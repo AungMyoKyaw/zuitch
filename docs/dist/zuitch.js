@@ -379,7 +379,13 @@
         let conv = element.childElementCount == 0;
         let isTextBox = element.isContentEditable;
         if (conv && !isTextBox) {
-          let Zawgyi = knayi.fontDetect(element.innerText) == 'zawgyi';
+          let Zawgyi;
+          try {
+            Zawgyi = knayi.fontDetect(element.innerText) == 'zawgyi';
+          } catch (e) {
+            Zawgyi = null;
+            console.log(Zawgyi, e.message);
+          }
           if (isUni && Zawgyi) {
             try {
               element.innerHTML = knayi.fontConvert(element.innerText, 'unicode');
