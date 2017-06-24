@@ -381,11 +381,19 @@
         if (conv && !isTextBox) {
           let Zawgyi = knayi.fontDetect(element.innerText) == 'zawgyi';
           if (isUni && Zawgyi) {
-            element.innerHTML = knayi.fontConvert(element.innerText, 'unicode');
+            try {
+              element.innerHTML = knayi.fontConvert(element.innerText, 'unicode');
+            } catch (e) {
+              console.log(e.message);
+            }
           }
 
           if (!isUni && !Zawgyi) {
-            element.innerHTML = knayi.fontConvert(element.innerText, 'zawgyi');
+            try {
+              element.innerHTML = knayi.fontConvert(element.innerText, 'zawgyi');
+            } catch (e) {
+              console.log(e.message);
+            }
           }
         }
       });
