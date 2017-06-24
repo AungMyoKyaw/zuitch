@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify zuitch.js -o docs/dist/zuitch.js"
+    "build": "browserify zuitch.js -o docs/dist/zuitch.js && babel docs/dist/zuitch.js --out-file docs/dist/zuitch.js"
   },
   "keywords": [
     "unicode",
@@ -18,6 +18,7 @@
   "author": "Aung Myo Kyaw",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "browserify": "^14.4.0"
   },
   "dependencies": {
