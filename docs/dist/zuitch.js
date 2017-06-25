@@ -380,15 +380,12 @@
         let isTextBox = element.isContentEditable;
         if (conv && !isTextBox) {
           let Zawgyi;
-          try {
-            Zawgyi = knayi.fontDetect(element.innerText) == 'zawgyi';
-          } catch (e) {
-            Zawgyi = null;
-            console.log(Zawgyi, e.message);
+          if (element.innerHTML) {
+            Zawgyi = knayi.fontDetect(element.innerHTML) == 'zawgyi';
           }
           if (isUni && Zawgyi) {
             try {
-              element.innerHTML = knayi.fontConvert(element.innerText, 'unicode');
+              element.innerHTML = knayi.fontConvert(element.innerHTML, 'unicode');
             } catch (e) {
               console.log(e.message);
             }
@@ -396,7 +393,7 @@
 
           if (!isUni && !Zawgyi) {
             try {
-              element.innerHTML = knayi.fontConvert(element.innerText, 'zawgyi');
+              element.innerHTML = knayi.fontConvert(element.innerHTML, 'zawgyi');
             } catch (e) {
               console.log(e.message);
             }
