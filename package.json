@@ -2,12 +2,12 @@
   "name": "zuitch",
   "version": "0.0.1",
   "description": "Zawgyi Unicode Switch",
-  "main": "zuitch.js",
+  "main": "src/zuitch.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "build": "browserify zuitch.js -o docs/dist/zuitch.js && babel docs/dist/zuitch.js --out-file docs/dist/zuitch.js"
+    "build": "webpack"
   },
   "keywords": [
     "unicode",
@@ -17,11 +17,17 @@
   "author": "Aung Myo Kyaw",
   "license": "LGPL",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "browserify": "^14.4.0"
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "webpack": "^3.3.0"
   },
   "dependencies": {
     "domready": "^1.0.8",
-    "knayi-myscript": "^2.0.5"
+    "knayi-myscript": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AungMyoKyaw/zuitch"
   }
 }
