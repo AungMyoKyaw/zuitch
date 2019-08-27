@@ -1,19 +1,21 @@
 # zuitch.js [![Build Status][build]][build-url] [![contributions welcome][contri-badge]][contri-url]
+
 > zawgyi unicode switch
 
 ## Getting started
 
 ```html
-<script src="http://aungmyokyaw.github.io/zuitch/dist/zuitch.js"></script>
+<script src="https://aungmyokyaw.github.io/zuitch/dist/zuitch.js"></script>
 ```
 
 Use viewport meta tag for responsive
 
 ```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 ```
 
 ## Build
+
 ```
 npm install
 ```
@@ -23,6 +25,7 @@ npm run build
 ```
 
 ## License
+
 [LGPL](./LICENSE)
 
 [contri-badge]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
