@@ -5,7 +5,7 @@
 ## Getting started
 
 ```html
-<script src="https://aungmyokyaw.github.io/zuitch/dist/zuitch.js"></script>
+<script src="https://unpkg.com/zuitch@latest/docs/dist/zuitch.js"></script>
 ```
 
 Use viewport meta tag for responsive
@@ -13,6 +13,10 @@ Use viewport meta tag for responsive
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 ```
+
+## Demo
+
+[ https://aungmyokyaw.github.io/zuitch/ ](https://aungmyokyaw.github.io/zuitch/dist/zuitch.js)
 
 ## Build
 
