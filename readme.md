@@ -16,7 +16,7 @@ Use viewport meta tag for responsive
 
 ## Demo
 
-[ https://aungmyokyaw.github.io/zuitch/ ](https://aungmyokyaw.github.io/zuitch/dist/zuitch.js)
+[ https://aungmyokyaw.github.io/zuitch/ ](https://aungmyokyaw.github.io/zuitch/)
 
 ## Build
 
