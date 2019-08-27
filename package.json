@@ -1,6 +1,6 @@
 {
   "name": "zuitch",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Zawgyi Unicode Switch",
   "main": "src/zuitch.js",
   "directories": {
