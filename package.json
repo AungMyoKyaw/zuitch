@@ -16,7 +16,7 @@
     "switch"
   ],
   "author": "Aung Myo Kyaw",
-  "license": "LGPL",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
