@@ -30,7 +30,7 @@ npm run build
 
 ## License
 
-[LGPL](./LICENSE)
+MIT © [Aung Myo Kyaw](https://github.com/AungMyoKyaw)
 
 [contri-badge]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
 [contri-url]: https://github.com/AungMyoKyaw/zuitch/issues
